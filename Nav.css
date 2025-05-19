@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Dancing+Script:wght@400..700&family=Grechen+Fuemen&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sigmar&display=swap");
+
+:root {
+  --color-darkblue: #1e2939;
+  --default-font-family: "Inter", sans-serif;
+  --default-font-weight: 400;
+  --text-color: #ffffff;
+  --body-color: #f3f4f6;
+  --default-font-size: 1rem;
+  --default-line-height: 1.5;
+  --hover-color:#364153;
+
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  color: inherit;
+}
+
+body {
+  font-family: var(--default-font-family);
+  font-size: var(--default-font-size);
+  font-weight: var(--default-font-weight);
+  line-height: var(--default-line-height);
+  color: var(--text-color);
+  background-color: var(--body-color);
+}
+
+.HeaderMainContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 4%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: var(--color-darkblue);
+}
+
+.logo {
+  width: 37px;
+}
+
+.ContainerLeft {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.HeaderNavlist {
+  height: 100%;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.anchor{
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+
+}
+
+.anchor:active{
+    background-color: pink;
+}
+.anchor:hover{
+background-color: var(--hover-color);
+}
+
+.ContainerRight {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.NewJobBtn {
+  background-color: #7c86ff;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  gap: 0.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  border-radius: 4px;
+}
+
+.HeaderProfile {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.HeaderProfile img {
+  border-radius: 50%;
+  object-fit: cover;
+}
